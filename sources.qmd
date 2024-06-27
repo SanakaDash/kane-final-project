@@ -1,0 +1,30 @@
+---
+title: "Sources"
+author: "Sanaka Dash"
+format: html
+---
+
+## My Process
+This project has been heavily influenced by both my data, as well as my own personal knowledge of the US automobile sector. Significant research has been conducted to ensure that all of the information in this project and that inside of the sources is 100% accurate.
+
+## Sources
+
+**Data:**
+
+US Environmental Protection Agency. “Explore the Automotive Trends Data | US EPA.” Environmental Protection Agency, 20 December 2023, [link](https://www.epa.gov/automotive-trends/explore-automotive-trends-data#SummaryData). Accessed 16 June 2024.
+
+**Generative Artificial Intelligence:**
+
+The use of AI has been an influential part of my project, and I have used the following Generative AI ChatBots throughout the process of this project:
+
+  - [ChatGPT 4o by OpenAI](https://chatgpt.com)\
+  - [Google Gemini](https://gemini.google.com/app)\
+  - [Claude 3.5 Sonnet by Anthropic](https://claude.ai/new)\
+
+Generative AI ChatBots have been used in this project for tasks as minor as setting themes, colors, and fonts, as well as for major tasks that involve writing code for diagrams. A major portion of the graph on this website has been designed/written by [ChatGPT 4o](https://chatgpt.com).
+
+**Website:**
+
+Lastly, but certainly not least, this website is a Quarto Website. To learn more about Quarto websites, visit [this page](https://quarto.org/docs/websites/).
+
+This Quarto website uses the [Lux](https://bootswatch.com/lux/) theme from [Bootswatch](https://bootswatch.com/), which come pre-installed with Quarto Websites. To learn more about theming Quarto Websites, visit [this page](https://quarto.org/docs/output-formats/html-themes.html/).

@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "US Vehicle Real-World MPG"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: graph.qmd
+        text: Graph
+    right:
+      - href: sources.qmd
+        text: Sources
+      - about.qmd
+    tools:
+      - icon: backpack4
+        menu:
+          - text: About the Course
+            href: https://bootcamp.davidkane.info/
+      - icon: github
+        menu:
+          - text: Source Code
+            href:  https://github.com/SanakaDash/kane-final-project/
+          - text: Report a Bug
+            href:  https://github.com/SanakaDash/kane-final-project/issues
+
+format:
+  html:
+    theme: lux
+    css: styles.css
+    toc: true
+
+
+

@@ -1,0 +1,56 @@
+---
+title: "Graph"
+author: "Sanaka Dash"
+format: html
+execute: 
+  echo: false # this makes it so that the code doesn't get echoed onto the webpage
+---
+
+```{r}
+#| label: Setup
+#| message: false # removes messages regarding the loading of the different packages
+
+# Load necessary libraries
+library(readr)
+library(dplyr)
+library(plotly)
+
+# Load & store the dataset
+data <- read_csv("table_export.csv")
+```
+
+```{r}
+#| label: Data Management
+#| warning: false # removes a warning message regarding the 'summarise()' below
+
+# Filter data for plotting
+plot_data <- data %>%
+  filter(`Vehicle Type` != "All", `Regulatory Class` != "All") %>%
+  group_by(`Model Year`, `Vehicle Type`, `Regulatory Class`) %>%
+  summarise(`Real-World MPG` = mean(`Real-World MPG`, na.rm = TRUE)) %>%
+  ungroup()
+```
+
+```{r}
+#| label: Plot
+
+# Create the interactive plot
+p <- plot_ly(plot_data, x = ~`Model Year`, y = ~`Real-World MPG`, color = ~`Vehicle Type`, symbol = ~`Regulatory Class`,
+             type = 'scatter', mode = 'markers+lines',
+             marker = list(size = 10),
+             hoverinfo = 'text',
+             text = ~paste('Year:', `Model Year`, '<br>Vehicle Type:', `Vehicle Type`,
+                           '<br>Regulatory Class:', `Regulatory Class`, '<br>Real-World MPG:', `Real-World MPG`)) %>%
+  layout(title = 'Real-World MPG Over Time by Vehicle Type and Regulatory Class',
+         xaxis = list(title = 'Model Year'),
+         yaxis = list(title = 'Real-World MPG'))
+```
+
+```{r}
+#| label: Output
+
+# Display the plot
+p
+```
+Over the years, many technologies have pioneered in the realm of automotive engineering, which have made way to significant improvements in fuel efficiency. However, it is also important to note that although vehicle MPG has dramatically improved, larger vehicles (such as trucks or truck-based SUVs) have continuously been touted as being the worst performers, simply because of their sheer girth. This has made families consider the likes of minivans and larger car-based SUVs (such as the Chevy Traverse or VW Atlas) which provide ample interior space while delivering significantly better fuel efficiency.
+

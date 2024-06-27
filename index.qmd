@@ -1,0 +1,11 @@
+---
+title: "Home"
+---
+
+The real-world gas mileage of modern motor vehicles in the US has increased dramatically over the course of 48 years. The following data was obtained from the US Environmental Protection Agency as part of a data set that analyzed various vehicle measures from 1975 to 2023. The relevant data frames were separated, and mapping data was then used to visualize the progression in an intuitive format. Although exceptions were prevalent due to safety concerns, the real-world MPG of the vast majority of modern cars in the US increased over the years.
+
+## Modern Technology
+
+![A comparison of 2 different methods of Active Fuel Management](afm.png)
+
+Active Fuel Management is a technology found in many larger vehicles with V8 Engines, where 4 of the 8 cylinders physically deactivate to reduce power when it is unneeded, therefore reducing fuel that would have otherwise gone into that cylinder (and also reducing emissions). Essentially, it stops the use of 4 of the 'power plants' of the engine, saving all the excess resources that would have otherwise been wasted.

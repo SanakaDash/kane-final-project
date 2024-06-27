@@ -1,0 +1,13 @@
+---
+title: "About This Project"
+---
+
+This project outlines my growth in graphing and data handling using the R language (so far in this course). I initially got this project idea when I encountered people complaining about gas prices at a local gas pump. This simple encounter got me thinking about how the fuel efficiency of vehicles have improved, and how that could have an effect on the price that people pay annually to put fuel in their vehicles. Overall, this project proves that I have learned to analyze, modify, and visually synthesize my data to create an engaging presentation.
+
+## Project Specifics:
+(also at the top right of the page!)
+GitHub: https://github.com/SanakaDash/kane-final-project 
+Course: [Kane's Free Data Science Bootcamp](https://bootcamp.davidkane.info/)
+
+## Contact Me:
+eMail: sanakadash@gmail.com
