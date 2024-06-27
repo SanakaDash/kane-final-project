@@ -4,3 +4,8 @@
 .Ruserdata
 
 /.quarto/
+
+*Rproj
+*_files
+_publish.yml
+rsconnect
